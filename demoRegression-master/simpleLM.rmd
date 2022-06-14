@@ -54,4 +54,16 @@ summary.lm(simp)
 
 The adjusted  R-squared value for age is lower than both neck and weight, and the residual standard error is between the last two variables, so the age variable isn't better than neck.
 
+```{r}
+simp <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+the adjusted R-squared value for head width is lower than neck and the residual standard errorfor head width is higher than , so it's not a better variable than neck.
+
+
+
+
 
