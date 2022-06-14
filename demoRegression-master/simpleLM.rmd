@@ -44,5 +44,14 @@ summary.lm(simp)
 
 Using the neck variable is better than the weight because the adjusted r squared for neck is higher than weight(the closer it is to 1 the better the variable is) and the residual standard error for weight is higher than neck.
 
+```{r}
+simp <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+
+The adjusted  R-squared value for age is lower than both neck and weight, and the residual standard error is between the last two variables, so the age variable isn't better than neck.
 
 
