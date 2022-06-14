@@ -64,6 +64,17 @@ summary.lm(simp)
 the adjusted R-squared value for head width is lower than neck and the residual standard errorfor head width is higher than , so it's not a better variable than neck.
 
 
+```{r}
+simp <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp)
+summary.lm(simp)
+```
 
+the head length variable is the best one so far because it has the highest adjusted R- squared value ( even higher than the neck variable) an it has the lowest residual standard error.
+
+
+### conclusion:
+In this type of project, we compared the relation between one specific variable and another variable by comparing the adjusted R-squared value and the residual standard error. ( the higher the r- squared value and the lower the residual standard error the better the variable chosen is).
 
 
